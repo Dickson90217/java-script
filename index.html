@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+
+<body>
+    <h1>
+        JavaScript
+    </h1>
+    <script>
+        let email = 'Dickson@gmail.com'
+        console.log(email.length)
+        console.log(email[1])
+        console.log(email.toUpperCase())
+        console.log(email.toLowerCase())
+        console.log(email.indexOf('@'))
+        console.log(email.substring(0, 7))
+        console.log(email.replace('Dick', 'jack'))
+        for (let i = 0; i < email.length; i++) {
+            console.log(email[i])
+        }
+
+        console.log('A' > 'a')
+        console.log(25 == '25')
+        console.log(25 === '25')
+
+        x = 20;
+        y = 30;
+        z = 10;
+
+        if (x < y && x > z) {
+            console.log("you are right")
+        }
+
+        console.log(Math.random());
+        console.log(Math.floor(Math.random() * 10));
+        console.log(Math.floor((Math.random() * 10) + 1));
+        console.log("---------------")
+
+        while (true) {
+            let number = (Math.floor(Math.random() * (50 - 1 + 1)) + 1);
+            console.log(number);
+            if (number == 50)
+                break;
+        }
+
+        console.log("---------------")
+        let a = null;
+        let lottonum = '';
+        const start = 1;
+        const end = 49;
+        for (let a = 0; a < 10; a++) {
+            for (let i = 0; i < 6; i++) {
+
+
+
+                let num = (Math.floor(Math.random() * (end - start + 1)) + start);
+                let lotto = (`第${i + 1}個號碼:${num}`);
+                console.log(lotto);
+                lottonum += (num + ' ');
+                document.write(`<h2>${lotto}</h2>`);
+
+            }
+            if a == 10;
+            break;
+        }
+
+        document.write(`<h2>${lottonum}</h2>`);
+
+
+        // let redius = prompt('輸入半徑');
+        // const PI = 3.1415926;
+        // console.log(redius - 10);
+        // let area = redius ** 2 * PI
+        // console.log(typeof (redius)'<br>' redius, area)
+        // document.write(typeof (redius), redius, area)
+        // document.write('<em>' + area + '</em>')
+    </script>
+</body>
+
+</html>
